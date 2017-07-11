@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="description" content="Tizen Wearable Web Basic Template" />
+	
+    <title>Tizen Wearable Web Basic Application</title>
+
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+   	<script src="js/jquery-2.0.0.js"></script>
+</head>
+
+<body>
+    <div id="main" class="page">
+        <div class="contents">
+          
+            <span class="info" id="statusgame-text">Status</span><br/>
+             <span class="info" id="game_id-text">Game_id</span><br/>
+              
+            
+            <button  class="info" onclick="RegGame()">Reg Game</button><br/>
+             <p margin="5px"; ><a class="info" href="#secondpage">Go to game</a><p>
+              
+            
+            
+        </div>
+    </div>
+    
+    <div id="secondpage" class="page">
+        <div class="contents">
+          	 <span  class="info" id="desc-text">Description:</span><br/>
+            <span class="info" id="status-text">Status</span><br/>
+            <span  class="info" id="points-text">Points Left:</span><br/>
+             <span class="info" id="curpoints-text"> Current_point:</span><br/>
+           
+             <span class="info" id="distance-text">Distation</span><br/>
+          
+            <button  class="info" onclick="oneShotFunc()">Check Coord</button><br/>
+             <span  class="info" id="locationInfo">Location:</span><br/>
+             <img src="images/load.gif" id="indicator" alt="загрузка" />
+        </div>
+    </div>
+      <script src="js/main.js"></script>
+</body>
+
+</html>
